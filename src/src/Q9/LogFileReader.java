@@ -1,34 +1,48 @@
 //Bhudev Katawal 116237 BIT sec "P"
 
-import java.io.*;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Scanner;
 
 public class LogFileReader {
 
     public static void main(String[] args) {
 
+        ArrayList<String> errors =
+                new ArrayList<>();
+        // Stores ERROR lines
+
         try {
 
-            BufferedReader br =
-                    new BufferedReader(
-                    new FileReader("weekly_sales.txt"));
-            // Opens file for reading
+            Scanner sc =
+                    new Scanner(
+                    new File("server.log"));
 
-            String line;
+            while(sc.hasNextLine()) {
 
-            while((line = br.readLine()) != null) {
-                // Reads file line by line
+                String line =
+                        sc.nextLine();
 
-                System.out.println(line);
+                if(line.contains("ERROR")) {
+
+                    errors.add(line);
+                    // Store matching line
+                }
             }
 
-            br.close();
-            // Close file
+            sc.close();
 
+            for(String e : errors) {
+
+                System.out.println(e);
+            }
         }
 
-        catch(IOException e) {
+        catch(FileNotFoundException e) {
 
-            System.out.println(e.getMessage());
+            System.out.println(
+                    e.getMessage());
         }
     }
 }
