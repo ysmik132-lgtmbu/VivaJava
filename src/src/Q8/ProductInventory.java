@@ -1,22 +1,28 @@
 //Bhudev Katawal 116237 BIT sec "P"
 
-interface Stockable {
+interface Discountable {
 
-    void updateStock(int qty);
+    void applyDiscount(double pct);
     // Interface method
 }
 
-class Product implements Stockable {
+class Electronics implements Discountable {
 
-    int stock = 50;
+    String name;
+    double price;
 
-    public void updateStock(int qty) {
+    Electronics(String name, double price) {
 
-        stock += qty;
+        this.name = name;
+        this.price = price;
+    }
+
+    public void applyDiscount(double pct) {
+
+        price = price - (price * pct / 100);
 
         System.out.println(
-                "Updated Stock = " +
-                stock);
+                name + " Price = " + price);
     }
 }
 
@@ -24,9 +30,17 @@ public class ProductInventory {
 
     public static void main(String[] args) {
 
-        Product p = new Product();
-        // Object creation
+        Electronics[] inventory = {
 
-        p.updateStock(20);
+                new Electronics("Laptop", 1000),
+                new Electronics("Phone", 500)
+        };
+        // Array of electronics
+
+        for(Electronics e : inventory) {
+
+            e.applyDiscount(10.0);
+            // Apply 10% discount
+        }
     }
 }
