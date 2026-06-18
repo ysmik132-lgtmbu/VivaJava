@@ -6,25 +6,25 @@ public class DuplicateFinder {
 
     public static void main(String[] args) {
 
-        ArrayList<Integer> numbers = new ArrayList<>();
-        // Dynamic list
+        ArrayList<String> guests = new ArrayList<>();
+        // Guest list
 
-        numbers.add(10);
-        numbers.add(20);
-        numbers.add(10);
-        numbers.add(30);
-        numbers.add(20);
+        guests.add("Ram");
+        guests.add("Hari");
+        guests.add("Ram");
+        guests.add("Sita");
+        guests.add("Hari");
 
-        for(int i = 0; i < numbers.size(); i++) {
+        for(int i = 0; i < guests.size(); i++) {
 
-            for(int j = i + 1; j < numbers.size(); j++) {
+            for(int j = i + 1; j < guests.size(); j++) {
+                // Compare current name with remaining names
 
-                if(numbers.get(i).equals(numbers.get(j))) {
-                    // Checks duplicate values
+                if(guests.get(i).equals(guests.get(j))) {
 
                     System.out.println(
                             "Duplicate: " +
-                            numbers.get(i));
+                            guests.get(i));
                 }
             }
         }
