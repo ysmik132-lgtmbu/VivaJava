@@ -1,8 +1,9 @@
 Bhudev katawal BIT Section "P".
 116237
-A manufacturing inventory utility class demonstrating method overloading with a
-single method name calculateVolume(). The method accepts either one dimension to
-calculate cube volume (length³) or three separate arguments (length, width, height)
-for cuboid volume, seamlessly adapting to different storage container types through
-compile-time polymorphism.
 
+This program demonstrates custom exception handling in Java.
+A user-defined exception class InvalidAgeException is created 
+to handle invalid age input scenarios. The method checkEligibility() 
+throws this exception when the age is less than 18. In the main method,
+a try-catch block is used to handle the exception gracefully, preventing 
+program crashes and ensuring proper validation of user input.
