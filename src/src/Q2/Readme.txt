@@ -1,7 +1,10 @@
 Bhudev katawal BIT Section "P".
 116237
 
-An automated irrigation system module that tracks daily soil moisture levels using a fixed-size double array of 7 elements.
-The program iterates through the array using its dynamic length property, computes the total variance from a baseline target 
-of 45.0 using absolute differences, and outputs a decision code indicating whether the system should maintain normal operation
-or require water adjustment.
+This program demonstrates the use of ArrayList 
+and conditional statements. An ArrayList is used 
+to store student scores, and a for-each loop processes
+each score individually. Based on the value of each score, 
+the program categorizes it as Distinction (≥90), Pass (≥40),
+or Fail (<40). It shows how collections and decision-making
+statements can be combined to process and classify data efficiently.
