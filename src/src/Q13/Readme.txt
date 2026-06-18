@@ -1,8 +1,9 @@
 Bhudev katawal BIT Section "P".
 116237
 
-A university department system demonstrating runtime polymorphism through method overriding.
-The ScienceDept subclass extends Department and overrides checkBudgetStatus() to include special
-lab fees, and the JVM dynamically binds the correct method execution at runtime based on the actual
-object type, even when referenced by a parent class variable.
+This program demonstrates interface implementation and polymorphism. 
+The Searchable interface defines a search() method, which is implemented 
+by both EBook and PhysicalBook classes. Each class provides its own version 
+of the search functionality. Interface references are used to call methods 
+dynamically, showing flexibility in design.
 
