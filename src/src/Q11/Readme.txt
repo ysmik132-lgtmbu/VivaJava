@@ -2,8 +2,9 @@ Bhudev katawal BIT Section "P".
 116237
 
 
-A corporate vehicle registration framework demonstrating inheritance with proper constructor chaining. 
-The ElectricTruck subclass explicitly uses the super keyword within its constructor to call the parent 
-Vehicle constructor, ensuring model properties are properly initialized and data integrity rules are 
-respected during object creation.
+This program demonstrates runtime polymorphism using inheritance. 
+The Vehicle class provides a method calculateFee(), which is overridden
+by Bike and Bus classes. An ArrayList stores different vehicle objects, 
+and during runtime, the appropriate method is called based on the object 
+type. This shows dynamic method dispatch in Java.
 
