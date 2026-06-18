@@ -1,8 +1,9 @@
 Bhudev katawal BIT Section "P".
 116237
 
-This program demonstrates interface implementation and polymorphism.
-The Searchable interface defines a search() method, which is implemented
-by both EBook and PhysicalBook classes. Each class provides its own version
-of the search functionality. Interface references are used to call methods
-dynamically, showing flexibility in design.
+This program demonstrates frequency counting using arrays.
+An integer array stores survey responses ranging from 1 to 5.
+A frequency array is used to count how many times each rating 
+appears. A loop increments the corresponding index, and another 
+loop displays the final count. It shows how arrays can be used 
+for simple statistical analysis.
