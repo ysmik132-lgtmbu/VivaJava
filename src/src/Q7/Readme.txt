@@ -1,7 +1,8 @@
 Bhudev katawal BIT Section "P".
 116237
 
-An e-commerce shipment gateway that validates package weights using logical operators combined
-with the NOT (!) unary operator. The program checks if weight falls within valid range (0-100)
-and uses the inverted boolean to instantly reject invalid weights, preventing further processing 
-of bad shipment requests.
+This program demonstrates exception handling with user input. 
+The user enters two integers, and the program performs division.
+It handles ArithmeticException to prevent division by zero and 
+InputMismatchException to handle invalid inputs. This ensures 
+that the program runs safely without crashing due to runtime errors.
