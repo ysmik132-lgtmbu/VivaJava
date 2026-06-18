@@ -1,9 +1,10 @@
 Bhudev katawal BIT Section "P".
 116237
 
-A university student management system demonstrating object-oriented
-instantiation with a base Student class containing fields (name, marks) 
-and a display() method, separate from the main execution class. The program 
-creates multiple distinct Student objects using the new keyword and accesses
-their internal data using the dot (.) operator, showcasing proper object lifecycle
-management.
+This program demonstrates abstraction and runtime polymorphism.
+An abstract class ElectronicDevice defines a common structure, 
+while classes like Printer and Scanner extend it and override 
+the powerOn() method. An array of ElectronicDevice references 
+is used to store different objects. At runtime, the appropriate 
+overridden method is called, showing how polymorphism allows 
+flexible behavior.
