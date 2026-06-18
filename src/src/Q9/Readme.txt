@@ -1,8 +1,10 @@
 Bhudev katawal BIT Section "P".
 116237
 
-InterestCalculator.java
-A financial ledger application with a modular compound interest calculation method that accepts principal,
-rate, and time as parameters, and returns the final amount as a double. This reusable, encapsulated approach 
-optimizes processing by breaking down complex financial computations into maintainable code segments.
+This program demonstrates file reading and ArrayList usage.
+It reads a file named server.log line by line using Scanner. 
+Each line is checked for the keyword "ERROR", and matching 
+lines are stored in an ArrayList. After reading the file, 
+all error messages are printed. It also handles FileNotFoundException
+to manage missing files safely.
 
