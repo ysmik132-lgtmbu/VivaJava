@@ -1,3 +1,6 @@
+Bhudev katawal BIT Section "P".
+116237
+
 InterestCalculator.java
 A financial ledger application with a modular compound interest calculation method that accepts principal,
 rate, and time as parameters, and returns the final amount as a double. This reusable, encapsulated approach 
