@@ -1,9 +1,10 @@
 Bhudev katawal BIT Section "P".
 116237
 
-A smart automation ecosystem built around a Java interface (SmartDevice) 
-that defines a common contract of turnOn() and turnOff() methods. Both SmartFan 
-and SmartLight provide their own implementations, demonstrating why interfaces 
-are preferred over inheritance hierarchies for heterogeneous devices that share
-behavior but not implementation.
+This program demonstrates file handling with exception handling.
+The program attempts to read a configuration file named config.txt. 
+If the file exists, it is loaded successfully. If the file is missing,
+a FileNotFoundException is caught, and a default configuration file
+is created automatically. This ensures the system always has required 
+configuration data.
 
