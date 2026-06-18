@@ -1,4 +1,5 @@
-//Bhudev katawal
+//Bhudev katawal BIT Section "P".
+//116237
 import java.util.Scanner;
 
 public class BodyFatCategory {//Q1
