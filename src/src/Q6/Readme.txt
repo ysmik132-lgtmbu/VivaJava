@@ -1,8 +1,9 @@
 Bhudev katawal BIT Section "P".
 116237
 
-A payroll processing system built around an abstract Employee superclass with abstract calculateBonus() 
-method. Two concrete subclasses (Manager with fixed 20% bonus, Consultant with custom percentage) are forced
-by the compiler to override the abstract method, ensuring each employee type has its own bonus calculation logic 
-while maintaining a common contract.
+This program demonstrates the use of ArrayList and nested loops.
+A list of guest names is stored in an ArrayList, and two loops are 
+used to compare each element with others. If duplicate values are 
+found, they are printed on the screen. It shows how brute-force 
+comparison can be used to detect duplicates in a collection.
 
