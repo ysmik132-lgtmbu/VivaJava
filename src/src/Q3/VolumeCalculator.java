@@ -1,27 +1,40 @@
-class VolumeCalculator {//Q3
+//Bhudev Katawal 116237 BIT sec "P"
 
-    double calculateVolume(double length) {
-        return length * length * length;
-    }
-    // Cube
+class InvalidAgeException extends Exception {
+    // Custom exception
 
-    double calculateVolume(double length,
-                           double width,
-                           double height) {
-        return length * width * height;
+    InvalidAgeException(String message) {
+        super(message);
     }
-    // Cuboid
+}
+
+public class InvalidAgeProtector {
+
+    static void checkEligibility(int age)
+            throws InvalidAgeException {
+            // Declares exception
+
+        if(age < 18) {
+            throw new InvalidAgeException(
+                    "Age is not valid");
+            // Throws custom exception
+        }
+
+        System.out.println("Eligible");
+    }
 
     public static void main(String[] args) {
 
-        VolumeCalculator obj = new VolumeCalculator();
+        try { // Risky code block
 
-        System.out.println(
-                "Cube Volume = " +
-                        obj.calculateVolume(5));
+            checkEligibility(16);
 
-        System.out.println(
-                "Cuboid Volume = " +
-                        obj.calculateVolume(5, 4, 3));
+        }
+
+        catch(InvalidAgeException e) {
+            // Handles exception
+
+            System.out.println(e.getMessage());
+        }
     }
 }
