@@ -19,8 +19,7 @@ public class SafeMathCalculator {
         catch(ArithmeticException e) {
             // Handles divide-by-zero
 
-            System.out.println(
-                    "Cannot divide by zero");
+            System.out.println( "Cannot divide by zero");
         }
     }
 }
